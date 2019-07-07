@@ -1,0 +1,265 @@
+#root {
+  background-color: #c2d4db;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.active-image {
+  width: 80%;
+  margin: auto;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  background-color: #333937;
+}
+
+.thumbImageSize {
+  height: 75%;
+  object-fit: cover;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.thumbnailGifs {
+  width: 120px;
+  height: 180px;
+  padding: 10px;
+  margin: 5px;
+  margin-top: 5px;
+  padding: 10px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 60px;
+  margin-top: 0;
+}
+
+/*buttons*/
+
+.thumbnailButton {
+  width: 100%;
+}
+
+.gradient-button {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 15px;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;
+  box-shadow: 0 0 20px #eee;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-image: linear-gradient(
+    to right,
+    #bbcbc6 0%,
+    #828278 51%,
+    #b5c3c4 100%
+  );
+}
+
+.gradient-button:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-position: right center;
+}
+
+.thumbnailGifs:nth-child(2n) .gradient-button {
+  background-image: linear-gradient(
+    to right,
+    #c7ccc3 0%,
+    #b7b3a8 51%,
+    #363430 100%
+  );
+}
+.thumbnailGifs:nth-child(2n) .gradient-button:hover {
+  background-position: right center;
+}
+
+.thumbnailGifs:nth-child(3n) .gradient-button {
+  background-image: linear-gradient(
+    to right,
+    #8e8876 0%,
+    #d3cdbe 51%,
+    #cdcaca 100%
+  );
+}
+.thumbnailGifs:nth-child(3n) .gradient-button:hover {
+  background-position: right center;
+}
+
+.thumbnailGifs:nth-child(5n) .gradient-button {
+  background-image: linear-gradient(
+    to right,
+    #c7cec4 0%,
+    #afa798 51%,
+    #cac7be 100%
+  );
+}
+.thumbnailGifs:nth-child(5n) .gradient-button:hover {
+  background-position: right center;
+}
+
+.thumbnailGifs:nth-child(7n) .gradient-button {
+  background-image: linear-gradient(
+    to right,
+    #a5adab 0%,
+    #c4d7de 51%,
+    #a9b4c2 100%
+  );
+}
+.thumbnailGifs:nth-child(7n) .gradient-button:hover {
+  background-position: right center;
+}
+
+.button-width {
+  width: 70%;
+  margin-bottom: 30px;
+  color: #da1243;
+}
+
+.restart-button {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;
+  box-shadow: 0 0 20px #eee;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 10px;
+  margin-top: 10px;
+  color: #da1243;
+}
+
+.restart-button {
+  background-image: linear-gradient(
+    to right,
+    #a5adab 0%,
+    #c4d7de 51%,
+    #a9b4c2 100%
+  );
+}
+.restart-button:hover {
+  background-position: right center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+/*animation*/
+
+.wrapper {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  width: 70%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: black;
+}
+
+.slide {
+  position: absolute;
+  left: -100%;
+  min-width: 100%;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 0.2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 0.2s;
+  object-fit: contain;
+}
+
+@-webkit-keyframes slide {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide {
+  100% {
+    left: 0;
+  }
+}
+
+/*alternating animation*/
+
+.next-slide {
+  position: absolute;
+  top: -100%;
+  -webkit-animation: next-slide 0.5s forwards;
+  -webkit-animation-delay: 0.2s;
+  animation: next-slide 0.5s forwards;
+  animation-delay: 0.2s;
+  object-fit: contain;
+  min-height: 100%;
+}
+
+@-webkit-keyframes next-slide {
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes next-slide {
+  100% {
+    top: 0;
+  }
+}
