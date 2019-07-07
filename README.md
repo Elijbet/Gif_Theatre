@@ -2,6 +2,8 @@
 
 > Make a gif theater that shuffles random gifs with an animated transition. Swap it, if the user clicks on a thumbnail, and give an option to resume random shufle upon click on resume button.
 
+### Live [Gif Theater React App](https://gif-theatre-react-app.herokuapp.com/) Here.
+
 ### Project Images
 
 ![Gif Theater](https://drive.google.com/uc?export=view&id=1eloe6zVX_Ff8BN8i5moGLOZ7I5GNrMxO)
