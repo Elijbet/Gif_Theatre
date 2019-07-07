@@ -1,4 +1,4 @@
-## Gif Theater
+## Gif Theater React App
 
 > Make a gif theater that shuffles random gifs with an animated transition. Swap it, if the user clicks on a thumbnail, and give an option to resume random shufle upon click on resume button.
 
@@ -28,6 +28,18 @@
 - access the API key via the process.env object
 - restart the server
 - [vue docs](https://cli.vuejs.org/guide/mode-and-env.html#using-env-variables-in-client-side-code)
+
+### DEPLOY TO HEROKU
+
+- heroku login 
+- heroku create gif-theatre-react-app
+- git commit last changes
+- heroku git:remote -a gif-theatre-react-app
+
+> If a yarn.lock file is detected in the root of the project, yarn is used for installing dependencies and running scripts. Otherwise, npm is used. If you have yarn.lock checked into your project, but still want to use npm to build on Heroku, just add yarn.lock to your .slugignore file.
+
+- git push heroku master 
+- heroku open  
 
 ### To Run locally
 
