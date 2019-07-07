@@ -22,7 +22,7 @@
 - Gifs randomly shuffle until you click on one. The it lingers on that image unless you click on another
 - When you click on a thumbnail image a button pops up giving the option to go back to random shuffle
 
-### HIDE SECRET KEYS
+### Hide Secret Keys
 
 - create a file called .env in the root of your project's directory
 - inside the .env file, prepend REACT_APP_title to your API key name of choice and assign it
@@ -31,7 +31,7 @@
 - restart the server
 - [vue docs](https://cli.vuejs.org/guide/mode-and-env.html#using-env-variables-in-client-side-code)
 
-### DEPLOY TO HEROKU
+### Deploy to Heroku
 
 - heroku login 
 - heroku create gif-theatre-react-app
