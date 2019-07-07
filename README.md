@@ -27,7 +27,7 @@
 - add the .env file to your .gitignore file
 - access the API key via the process.env object
 - restart the server
-- (vue docs)[https://cli.vuejs.org/guide/mode-and-env.html#using-env-variables-in-client-side-code]
+- [vue docs](https://cli.vuejs.org/guide/mode-and-env.html#using-env-variables-in-client-side-code)
 
 ### To Run locally
 
